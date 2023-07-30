@@ -365,6 +365,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 1.25rem;
+
+  border-radius: 0.5rem;
 }
 
 .card h2 {
@@ -413,7 +415,28 @@ main {
   opacity: 0;
 }
 
+.comment__user-name {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 @media screen and (max-width: 650px) {
+  .card__btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .card {
+    margin-inline: 1rem;
+    width: 100%;
+  }
+
+  .card__btn {
+    padding-inline: 1.25rem;
+  }
+
   .comment__buttons {
     position: absolute;
     right: 0;
@@ -439,12 +462,6 @@ main {
 
   main {
     padding-inline: 1rem;
-  }
-
-  .comment__user-name {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
   }
 
   .comment__form.main {

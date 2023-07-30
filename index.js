@@ -2,12 +2,6 @@
 top / parent comment : The comment that sits at the top of replies (main comment)
 */
 
-/*Things to do:
-
-5. figure out how to dates is going to work
-
-*/
-
 const users = [
   {
     name: "amyrobson",
