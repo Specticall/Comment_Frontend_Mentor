@@ -710,6 +710,8 @@ function initiate_upvote_btn() {
       // Display the vote value on the
       vote_display.textContent =
         comment_object.votes.toString();
+
+      save_in_local();
     });
 
     // Limits the amount of upvotes a user can give for each comment (1 upvote OR 1 downvote)
