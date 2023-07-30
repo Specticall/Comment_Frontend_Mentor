@@ -66,8 +66,9 @@ let comments = [
 // Retrieves the saved comment from previous sessions
 
 comments =
-  JSON.parse(localStorage.getItem("saved_comments_object"))
-    .data || comments;
+  JSON.parse(
+    localStorage.getItem("saved_comments_object") || 0
+  ).data || comments;
 
 let current_user = users[0];
 const delete_yes_btn = document.querySelector(
